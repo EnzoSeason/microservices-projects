@@ -8,6 +8,8 @@ const app = express();
 app.use(bodyParser.json());
 
 // dummy data
+// key: post id
+// value: { post id, post title }
 const posts = {};
 
 // endpoints
