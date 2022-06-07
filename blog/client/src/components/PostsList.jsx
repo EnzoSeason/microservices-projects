@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { CommentCreate } from "./CommentCreate";
+import { CommentsList } from "./CommentsList";
 
 export function PostsList() {
   const [posts, setPosts] = useState({});
@@ -20,6 +21,7 @@ export function PostsList() {
         {Object.keys(posts).map((key) => (
           <div key={key}>
             <h2>{posts[key].title}</h2>
+            <CommentsList postId={key} />
             <CommentCreate postId={key} />
           </div>
         ))}

@@ -14,8 +14,9 @@ export function CommentCreate({ postId }) {
     console.log(response.data);
     setContent("");
   };
+
   return (
-    <>
+    <div style={{ margin: "1rem" }}>
       <h3>Create Comment</h3>
       <form onSubmit={onSubmit}>
         <div style={{ margin: "1rem" }}>
@@ -30,6 +31,6 @@ export function CommentCreate({ postId }) {
           <button type="submit">Submit</button>
         </div>
       </form>
-    </>
+    </div>
   );
 }
