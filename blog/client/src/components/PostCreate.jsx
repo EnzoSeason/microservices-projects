@@ -17,7 +17,9 @@ export function PostCreate() {
       <h1>Create Post</h1>
       <form onSubmit={onSubmit}>
         <div>
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title" style={{ margin: "1rem" }}>
+            Title
+          </label>
           <input
             type="text"
             id="title"
@@ -25,7 +27,9 @@ export function PostCreate() {
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
-        <button type="submit">Create Post</button>
+        <button type="submit" style={{ margin: "1rem" }}>
+          Create Post
+        </button>
       </form>
     </>
   );
